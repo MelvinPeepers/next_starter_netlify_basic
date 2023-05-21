@@ -15,13 +15,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
             <Image
               src="/logo-netlify.svg"
               alt="Netlify Logo"
               className={styles.netlifyLogo}
-              width={100}
-              height={24}
+              width={150}
+              height={44}
               priority
             />
           </a>
