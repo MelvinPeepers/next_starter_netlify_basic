@@ -9,23 +9,6 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.js</code>
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
       </div>
 
       <div className={styles.center}>
@@ -41,7 +24,7 @@ export default function Home() {
 
       <div className={styles.grid}>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://nextjs.org/docs/getting-started/installation"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -53,7 +36,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://docs.netlify.com/integrations/frameworks/next-js/overview/"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -61,11 +44,11 @@ export default function Home() {
           <h2>
             Learn <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Learn about Next.js on Netlify!</p>
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://www.netlify.com/with/nextjs/"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -77,7 +60,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://www.netlify.com/"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -86,7 +69,7 @@ export default function Home() {
             Deploy <span>-&gt;</span>
           </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Instantly deploy your Next.js site to a shareable URL with Netlify.
           </p>
         </a>
       </div>
