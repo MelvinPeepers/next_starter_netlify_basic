@@ -40,7 +40,7 @@ const page = () => {
             Code used to make the above HTML form
             </h2>
             <p>Netlify Docs on forms</p>
-            <p>Make sure you have the html that is in the red retangle.</p>
+            <p>Make sure you have the html that is in the red retangle, or you will receive an 404 on submit.</p>
             </a>
         </div>
         <div>
