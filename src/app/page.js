@@ -9,6 +9,23 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.js</code>
         </p>
+        <div>
+          <a
+            href="https://netlify.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            By{' '}
+            <Image
+              src="/logo-netlify.svg"
+              alt="Netlify Logo"
+              className={styles.netlifyLogo}
+              width={100}
+              height={24}
+              priority
+            />
+          </a>
+        </div>
       </div>
 
       <div className={styles.center}>
