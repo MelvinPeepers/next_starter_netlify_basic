@@ -1,7 +1,8 @@
+import React from 'react'
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from '../page.module.css'
 
-export default function Images() {
+const page = () => {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -14,7 +15,7 @@ export default function Images() {
               alt="Netlify Logo"
               className={styles.netlifyLogo}
               width={190}
-              height={95}
+              height={75}
               priority
             />
         </div>
@@ -25,8 +26,8 @@ export default function Images() {
           className={styles.logo}
           src="/brooklyn-bridge.jpg"
           alt="Photo of the Brooklyn Bridge"
-          width={580}
-          height={240}
+          width={640}
+          height={320}
           priority
         />
       </div>
@@ -35,8 +36,8 @@ export default function Images() {
           className={styles.logo}
           src="/goethals-bridge.jpg"
           alt="Photo of the Goethals Bridge in NY"
-          width={580}
-          height={240}
+          width={640}
+          height={320}
           priority
         />
       </div>
@@ -45,12 +46,13 @@ export default function Images() {
           className={styles.logo}
           src="/verrazzano-narrows-bridge.jpg"
           alt="Photo of the Verrazzano Narrows Bridge between Staten Island and Manhattan"
-          width={580}
-          height={240}
+          width={640}
+          height={320}
           priority
         />
       </div>
-
     </main>
   )
 }
+
+export default page
