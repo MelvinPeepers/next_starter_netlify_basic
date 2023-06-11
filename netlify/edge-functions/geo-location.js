@@ -1,4 +1,4 @@
-import { Context } from "https://edge.netlify.com";
+import { Context } from "netlify:edge";
 
 export default async (req: Request, { geo }: Context) => {
     // Bypassing if the request is not from Portugal.
