@@ -44,6 +44,7 @@ const page = () => {
             </a>
         </div>
         <div>
+            
         <Image
           src="/code.png"
           alt="code from Netlify for forms"

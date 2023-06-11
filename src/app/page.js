@@ -19,8 +19,8 @@ export default function Home() {
               src="/logo-netlify.svg"
               alt="Netlify Logo"
               className={styles.netlifyLogo}
-              width={190}
-              height={95}
+              width={180}
+              height={90}
               priority
             />
           </a>
