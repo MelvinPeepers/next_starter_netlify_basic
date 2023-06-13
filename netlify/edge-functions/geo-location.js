@@ -1,15 +1,28 @@
+import { Context } from "https://edge.netlify.com";
+
 export default async (request, context) => {
-  const translations = {
-    UNKNOWN: "Hello!",
-    US: "Howdy y'all!",
-    GB: "How do you do?",
-    AU: "G'day, mate!",
-  };
+  // Here's what's available on context.geo
 
-  const countryCode = context.geo?.country?.code || "UNKNOWN";
-  const countryName = context.geo?.country?.name || "somewhere in the world";
+  // context: {
+  //   geo: {
+  //     city?: string;
+  //     country?: {
+  //       code?: string;
+  //       name?: string;
+  //     },
+  //     subdivision?: {
+  //       code?: string;
+  //       name?: string;
+  //     },
+  //     latitude?: number;
+  //     longitude?: number;
+  //     timezone?: string;
+  //   }
+  // }
 
-  return new Response(`Your personalized greeting for ${countryName} is: ${translations[countryCode]}`, {
-    headers: { "content-type": "text/html" },
+  return new Response(JSON.stringify({
+    geo: context.geo,
+  }), {
+    headers: { "content-type": "application/json" },
   });
 };
