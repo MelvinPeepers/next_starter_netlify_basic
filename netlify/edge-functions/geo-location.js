@@ -1,4 +1,4 @@
-import { Context } from "https://edge.netlify.com";
+import { fetch } from "https://cdnjs.cloudflare.com/ajax/libs/node-fetch/2.6.1/index.js";
 
 export default async (request, context) => {
   // Here's what's available on context.geo
@@ -20,9 +20,17 @@ export default async (request, context) => {
   //   }
   // }
 
-  return new Response(JSON.stringify({
-    geo: context.geo,
-  }), {
-    headers: { "content-type": "application/json" },
+  const response = await fetch("https://edge.netlify.com", {
+    headers: { "Content-Type": "application/json" },
+    method: "POST",
+    body: JSON.stringify({
+      request: request,
+      context: context,
+    }),
   });
+
+  const responseBody = await response.json();
+
+  return responseBody;
 };
+
